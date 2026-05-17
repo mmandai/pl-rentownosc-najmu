@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WTZSDHWK');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HR2CN9MCEC"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HR2CN9MCEC');</script>
+  <title>Kalkulator Rentowności Najmu 2026 — ROI z wynajmu mieszkania w Polsce</title>
+  <meta name="description" content="Darmowy kalkulator rentowności najmu. ROI, miesięczny zysk netto, okres zwrotu, 3 scenariusze, projekcja 5-letnia. Uwzględnia podatek ryczałtowy 8.5%, pustostany i ratę kredytu.">
+  <meta name="keywords" content="kalkulator rentowności najmu, ROI wynajem mieszkania, opłacalność najmu kalkulator, zysk z wynajmu polska, kalkulator inwestycji nieruchomości">
+  <link rel="canonical" href="https://mmandai.github.io/pl-rentownosc-najmu/">
+  <meta property="og:title" content="Kalkulator Rentowności Najmu — ROI z wynajmu mieszkania">
+  <meta property="og:description" content="Sprawdź czy wynajem się opłaca. ROI, zysk netto, 3 scenariusze, projekcja 5-letnia. Bezpłatnie.">
+  <meta property="og:url" content="https://mmandai.github.io/pl-rentownosc-najmu/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='40' fill='%23DC2626' font-weight='700'>MM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#F5F5F0;--bg2:#FFFFFF;--bg3:#EBEBEA;--line:rgba(0,0,0,0.09);--text:#111111;--muted:rgba(17,17,17,0.52);--dim:rgba(17,17,17,0.32);--purple:#DC2626;--light:#DC2626;--gold:#92620A;--green:#15803D;--red:#DC2626;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    a{color:inherit;text-decoration:none;}
+
+    nav{position:sticky;top:0;z-index:100;background:rgba(245,245,240,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--line);}
+    .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
+    .logo{font-family:'DM Mono',monospace;font-size:17px;font-weight:500;color:var(--text);}
+    .logo span{color:var(--purple);}
+    .nav-links{display:flex;gap:24px;align-items:center;}
+    .nav-links a{font-size:13px;color:var(--muted);transition:color .2s;}
+    .nav-links a:hover{color:var(--text);}
+    .nav-buy{font-size:13px;font-weight:600;background:var(--purple);color:#fff !important;padding:9px 20px;border-radius:40px;transition:opacity .2s;}
+    .nav-buy:hover{opacity:.85;}
+
+    .hero{max-width:1100px;margin:0 auto;padding:72px 24px 56px;border-bottom:1px solid var(--line);text-align:center;}
+    .hero-tag{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;}
+    .hero-tag::before{content:'// ';}
+    .hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(36px,6vw,68px);font-weight:800;line-height:1.05;letter-spacing:-0.02em;color:var(--text);margin-bottom:20px;}
+    .hero h1 em{font-style:normal;color:var(--purple);}
+    .hero-sub{font-size:17px;color:var(--muted);max-width:560px;line-height:1.6;margin:0 auto 36px;}
+    .hero-pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px;justify-content:center;}
+    .hero-pill{font-family:'DM Mono',monospace;font-size:12px;color:var(--dim);padding:6px 14px;border:1px solid var(--line);border-radius:20px;}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
+    .btn-primary{background:var(--purple);color:#fff !important;padding:14px 28px;border-radius:40px;font-weight:600;font-size:15px;transition:opacity .2s,transform .2s;display:inline-flex;align-items:center;gap:8px;}
+    .btn-primary:hover{opacity:.88;transform:translateY(-1px);}
+    .btn-outline{background:transparent;border:1.5px solid rgba(0,0,0,0.2);color:var(--text);padding:14px 28px;border-radius:40px;font-weight:500;font-size:15px;transition:border-color .2s,background .2s;}
+    .btn-outline:hover{border-color:rgba(220,38,38,.3);background:rgba(220,38,38,.04);}
+
+    .calc-section{max-width:1100px;margin:0 auto;padding:48px 24px 0;}
+    .calc-wrap{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:40px;}
+    .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+
+    .inputs-col h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:700;color:var(--text);margin-bottom:6px;}
+    .inputs-col .desc{font-size:14px;color:var(--muted);margin-bottom:28px;line-height:1.5;}
+    .sec-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;padding-bottom:10px;border-bottom:1px solid var(--line);margin:24px 0 14px;}
+    .field{margin-bottom:14px;}
+    .field label{display:block;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:7px;}
+    .hint{font-size:11px;color:var(--dim);font-family:'DM Mono',monospace;font-weight:400;text-transform:none;letter-spacing:0;margin-left:6px;}
+    input[type="number"],select{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:8px;color:var(--text);font-family:'DM Mono',monospace;font-size:15px;padding:11px 14px;outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none;}
+    input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
+    input[type="number"]{-moz-appearance:textfield;}
+    input[type="number"]:focus,select:focus{border-color:var(--purple);}
+
+    .results-col{position:sticky;top:80px;}
+    .results-card{background:var(--bg);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:16px;}
+    .results-head{padding:14px 20px;border-bottom:1px solid var(--line);font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;text-align:center;}
+    .result-row{padding:13px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;}
+    .result-row:last-child{border-bottom:none;}
+    .rl{font-size:13px;color:var(--muted);}
+    .rv{font-family:'DM Mono',monospace;font-size:15px;font-weight:500;color:var(--text);}
+    .rv.big{font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:700;}
+    .rv.g{color:var(--green);}
+    .rv.r{color:var(--red);}
+    .verdict-box{margin:16px;padding:16px;border-radius:10px;border:1px solid var(--line);background:var(--bg3);text-align:center;}
+    .vl{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;}
+    .vt{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:700;}
+    .vt.dobra{color:var(--green);}
+    .vt.srednia{color:var(--gold);}
+    .vt.ryzykowna{color:var(--red);}
+
+    .table-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;text-align:center;}
+    .data-table{width:100%;border-collapse:collapse;table-layout:fixed;}
+    .data-table th{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;padding:8px 10px;border-bottom:1px solid var(--line);text-align:center;}
+    .data-table td{font-family:'DM Mono',monospace;font-size:11px;color:var(--text);padding:8px 10px;border-bottom:1px solid var(--line);text-align:center;}
+    .data-table tr:last-child td{border-bottom:none;}
+    .data-table .g{color:var(--green);font-weight:700;}
+    .data-table .r{color:var(--red);}
+
+    .scenarios{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px;}
+    .scenario-card{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center;}
+    .sc-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;}
+    .sc-czynsz{font-family:'DM Mono',monospace;font-size:12px;color:var(--text);margin-bottom:3px;}
+    .sc-roi{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;}
+    .sc-ocena{font-size:10px;color:var(--muted);margin-top:4px;font-family:'DM Mono',monospace;}
+
+    .calc-cta{padding:20px 24px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;}
+    .cta-text{font-size:14px;color:var(--muted);line-height:1.4;}
+    .cta-text strong{color:var(--text);display:block;margin-bottom:2px;font-size:15px;}
+    .btn-excel{background:var(--purple);color:#fff !important;padding:11px 22px;border-radius:40px;font-weight:600;font-size:14px;white-space:nowrap;transition:opacity .2s;display:inline-flex;align-items:center;gap:6px;}
+    .btn-excel:hover{opacity:.85;}
+
+    .explainer{max-width:1100px;margin:0 auto;padding:64px 24px;}
+    .section-tag{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;text-align:center;}
+    .explainer h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;color:var(--text);margin-bottom:48px;line-height:1.1;text-align:center;}
+    .explainer h2 em{font-style:normal;color:var(--purple);}
+    .exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .exp-item{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:30px 26px;text-align:center;transition:border-color .2s;}
+    .exp-item:hover{border-color:rgba(220,38,38,.25);}
+    .exp-num{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;margin-bottom:12px;}
+    .exp-item h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:700;color:var(--text);margin-bottom:8px;}
+    .exp-item p{font-size:14px;color:var(--muted);line-height:1.65;}
+
+    .upsell{max-width:1100px;margin:0 auto;padding:0 24px 64px;}
+    .upsell-card{background:var(--bg2);border:1px solid rgba(0,0,0,.1);border-radius:16px;padding:48px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;text-align:center;position:relative;overflow:hidden;}
+    .upsell-card::before{content:'';position:absolute;top:-40%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(220,38,38,.06) 0%,transparent 70%);pointer-events:none;}
+    .upsell-tag{font-family:'DM Mono',monospace;font-size:10px;color:#92620A;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;background:rgba(244,196,48,.1);border:1px solid rgba(244,196,48,.35);border-radius:20px;display:inline-block;margin-bottom:20px;}
+    .upsell-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(20px,3vw,30px);font-weight:800;color:var(--text);line-height:1.1;margin-bottom:14px;}
+    .upsell-card h3 em{font-style:normal;color:var(--purple);}
+    .upsell-card>div:first-child>p{font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:22px;}
+    .upsell-list{list-style:none;display:inline-flex;flex-direction:column;gap:7px;margin-bottom:26px;text-align:left;}
+    .upsell-list li{font-size:14px;color:var(--text);display:flex;align-items:center;gap:10px;white-space:normal;}
+    .upsell-list li::before{content:'+';color:var(--purple);font-weight:700;}
+    .list-link{color:var(--purple);font-size:13px;font-weight:600;white-space:nowrap;margin-left:6px;transition:opacity .2s;}
+    .list-link:hover{opacity:.7;}
+    .list-price{font-family:'DM Mono',monospace;}
+    .price-box{text-align:center;border:1px solid var(--line);border-radius:12px;padding:28px 24px;background:var(--bg3);position:relative;z-index:2;}
+    .price-old{font-family:'DM Mono',monospace;font-size:13px;color:var(--dim);text-decoration:line-through;margin-bottom:4px;}
+    .price-big{font-family:'Plus Jakarta Sans',sans-serif;font-size:64px;font-weight:800;color:var(--text);line-height:1;letter-spacing:-2px;margin-bottom:4px;}
+    .price-big span{font-size:20px;color:var(--muted);}
+    .price-save{font-family:'DM Mono',monospace;font-size:10px;color:#92620A;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;}
+
+    .faq-section{max-width:900px;margin:0 auto;padding:0 24px 80px;}
+    .faq-list{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+    .faq-item{background:var(--bg2);}
+    .faq-item[open]{background:var(--bg3);}
+    .faq-item summary{padding:19px 22px;cursor:pointer;font-weight:600;font-size:15px;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;}
+    .faq-item summary::-webkit-details-marker{display:none;}
+    .faq-item summary::after{content:'+';font-family:'DM Mono',monospace;font-size:20px;color:var(--muted);}
+    .faq-item[open] summary::after{content:'−';}
+    .faq-body{padding:0 22px 18px;font-size:14px;color:var(--muted);line-height:1.7;}
+    .faq-body a{color:var(--purple);}
+
+    footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;}
+    .footer-inner{max-width:1100px;margin:0 auto;}
+    .footer-links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;font-size:13px;}
+    .footer-links a{color:var(--muted);transition:color .2s;}
+    .footer-links a:hover{color:var(--purple);}
+    .disclaimer{max-width:900px;margin:14px auto 0;font-size:11px;color:var(--dim);line-height:1.6;}
+
+    @media(max-width:768px){
+      .calc-grid,.exp-grid,.upsell-card{grid-template-columns:1fr;}
+      .results-col{position:static;}
+      .scenarios{grid-template-columns:1fr;}
+      .nav-links a:not(.nav-buy){display:none;}
+      .nav-buy{display:none;}
+      .calc-wrap{padding:24px 16px;}
+      .upsell-card{padding:32px 20px;}
+      .price-big{font-size:48px;}
+      body{overflow-x:hidden;}
+    }
+    /* ── Metodologia ── */
+    .meth-trigger{display:flex;align-items:center;justify-content:center;gap:14px;cursor:pointer;padding:14px 0;margin-top:28px;border-top:1px solid var(--line);user-select:none;transition:opacity .2s;}
+    .meth-trigger:hover{opacity:.7;}
+    .meth-trigger-label{font-family:'DM Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);transition:color .2s;}
+    .meth-trigger:hover .meth-trigger-label,.meth-trigger.open .meth-trigger-label{color:var(--purple);}
+    .meth-chevrons{font-size:16px;color:var(--dim);transition:color .2s,transform .3s;line-height:1;}
+    .meth-trigger:hover .meth-chevrons,.meth-trigger.open .meth-chevrons{color:var(--purple);}
+    .meth-trigger.open .meth-chevrons{transform:rotate(180deg);}
+    .meth-box{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1);}
+    .meth-box.open{max-height:2000px;}
+    .meth-inner{padding:24px 4px 8px;text-align:center;}
+    .meth-title{font-family:'DM Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--purple);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+    .meth-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:20px;}
+    .meth-block{padding:0 4px;text-align:center;}
+    .meth-block-title{font-size:12px;font-weight:700;color:var(--text);margin-bottom:8px;}
+    .meth-formula{font-family:'DM Mono',monospace;font-size:11px;color:var(--text);margin:8px 0;line-height:1.7;}
+    .meth-note{font-size:12px;color:var(--muted);line-height:1.7;}
+    .meth-sources{font-size:11px;color:var(--dim);font-family:'DM Mono',monospace;border-top:1px solid var(--line);padding-top:14px;margin-top:4px;line-height:1.8;text-align:center;}
+    .meth-updated{font-size:11px;color:var(--dim);font-family:'DM Mono',monospace;margin-top:6px;text-align:center;}
+  </style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTZSDHWK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="https://mmandai.github.io"><span>MM</span>DAI</a>
+    <div class="nav-links">
+      <a href="#kalkulator">Kalkulator</a>
+      <a href="#jak-to-dziala">Jak to działa</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-buy" href="https://imemyselfai.gumroad.com/l/rentownoscinajmu" data-track="cta_click" data-location="nav" data-product="rentownosc_najmu">Kup Excel — 39 PLN</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">Polska · Nieruchomości · 2026</div>
+  <h1>Rentowność najmu —<br><em>czy to się opłaca?</em></h1>
+  <p class="hero-sub">Wpisz dane mieszkania — dostaniesz ROI, miesięczny zysk netto, okres zwrotu i trzy scenariusze rynkowe. Z podatkiem ryczałtowym 8.5% i pustostanami.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">ROI netto</span>
+    <span class="hero-pill">Podatek 8.5% ryczałt</span>
+    <span class="hero-pill">3 scenariusze</span>
+    <span class="hero-pill">Projekcja 5-letnia</span>
+    <span class="hero-pill">Bez rejestracji</span>
+  </div>
+  <div class="hero-actions">
+    <a class="btn-primary" href="#kalkulator">Użyj kalkulatora →</a>
+    <a class="btn-outline" href="https://imemyselfai.gumroad.com/l/rentownoscinajmu" data-track="cta_click" data-location="hero" data-product="rentownosc_najmu">Pobierz Excel — 39 PLN</a>
+  </div>
+</section>
+
+<section class="calc-section" id="kalkulator">
+  <div class="calc-wrap">
+    <div class="calc-grid">
+
+      <div class="inputs-col">
+        <h2>Rentowność Najmu</h2>
+        <p class="desc">Wprowadź koszty inwestycji i parametry najmu. Kalkulator wyliczy realny ROI po podatku, zysk miesięczny i pokaże opłacalność w 3 scenariuszach.</p>
+
+        <div class="sec-label">Koszty inwestycji</div>
+        <div class="field"><label>Cena zakupu <span class="hint">PLN</span></label><input type="number" id="zakup" value="245000" oninput="calc()"></div>
+        <div class="field"><label>Koszt remontu <span class="hint">PLN, 0 jeśli gotowe</span></label><input type="number" id="remont" value="65000" oninput="calc()"></div>
+        <div class="field"><label>Koszty transakcyjne <span class="hint">notariusz, PCC — PLN</span></label><input type="number" id="trans" value="4900" oninput="calc()"></div>
+        <div class="field"><label>Wkład własny <span class="hint">%</span></label><input type="number" id="wklad" value="40" step="1" oninput="calc()"></div>
+        <div class="field"><label>Oprocentowanie kredytu <span class="hint">% rocznie, 0 jeśli brak</span></label><input type="number" id="oprocent" value="6.99" step="0.1" oninput="calc()"></div>
+        <div class="field"><label>Okres kredytu <span class="hint">lata</span></label><input type="number" id="okres" value="30" oninput="calc()"></div>
+
+        <div class="sec-label">Przychody</div>
+        <div class="field"><label>Miesięczny czynsz najmu <span class="hint">PLN</span></label><input type="number" id="czynsz" value="3000" oninput="calc()"></div>
+        <div class="field"><label>Pustostany <span class="hint">miesięcy/rok</span></label><input type="number" id="pustostany" value="0.5" step="0.5" oninput="calc()"></div>
+        <div class="field"><label>Roczny wzrost wartości <span class="hint">%</span></label><input type="number" id="wzrost" value="5" step="0.5" oninput="calc()"></div>
+
+        <div class="sec-label">Koszty miesięczne</div>
+        <div class="field"><label>Opłaty wspólnoty <span class="hint">PLN/mies.</span></label><input type="number" id="wspolnota" value="200" oninput="calc()"></div>
+        <div class="field"><label>Fundusz remontowy <span class="hint">PLN/mies.</span></label><input type="number" id="fundusz" value="80" oninput="calc()"></div>
+        <div class="field"><label>Ubezpieczenie <span class="hint">PLN/mies.</span></label><input type="number" id="ubezp" value="55" oninput="calc()"></div>
+        <div class="field"><label>Podatek od nieruchomości <span class="hint">PLN/mies.</span></label><input type="number" id="podatek" value="25" oninput="calc()"></div>
+        <div class="field"><label>Zarządzanie najmem <span class="hint">PLN/mies., 0 jeśli samodzielnie</span></label><input type="number" id="zarzadz" value="0" oninput="calc()"></div>
+        <div class="field"><label>Naprawy / utrzymanie <span class="hint">PLN/mies.</span></label><input type="number" id="naprawy" value="120" oninput="calc()"></div>
+
+        <!-- METODOLOGIA -->
+        <div class="meth-trigger" id="methTrigger" onclick="toggleMeth()">
+          <span class="meth-chevrons">↓</span>
+          <span class="meth-trigger-label">Metodologia</span>
+          <span class="meth-chevrons">↓</span>
+        </div>
+        <div class="meth-box" id="methBox">
+          <div class="meth-inner">
+            <div class="meth-title">Jak działa ten kalkulator</div>
+            <div class="meth-grid">
+              <div class="meth-block">
+                <div class="meth-block-title">Rentowność brutto i netto</div>
+                <div class="meth-formula">Rentowność brutto = (Czynsz × 12) ÷ Cena zakupu × 100%<br>Rentowność netto = (Czynsz × 12 − Koszty roczne − Podatek) ÷ Cena zakupu × 100%</div>
+                <div class="meth-note">Rentowność netto uwzględnia pustostany, wszystkie koszty operacyjne i podatek ryczałtowy 8,5%. Dobry wynik w Polsce to powyżej 5–6% netto. Wartości powyżej 8% to rzadkość w dużych miastach.</div>
+              </div>
+              <div class="meth-block">
+                <div class="meth-block-title">Podatek ryczałtowy</div>
+                <div class="meth-formula">Podatek = Czynsz brutto × 8,5% (do 100.000 zł/rok)<br>Podatek = Czynsz brutto × 12,5% (powyżej 100.000 zł/rok)</div>
+                <div class="meth-note">Ryczałt liczony jest od przychodu (czynszu), nie od dochodu. Nie można odliczyć kosztów, raty kredytu ani remontów. Wybór ryczałtu należy zgłosić do 20 lutego roku podatkowego. Źródło: Ustawa o PIT art. 6 ust. 1a.</div>
+              </div>
+              <div class="meth-block">
+                <div class="meth-block-title">ROI (Zwrot z Kapitału)</div>
+                <div class="meth-formula">ROI = Roczny zysk netto ÷ Kapitał własny × 100%<br>Kapitał własny = Wkład własny + Koszty transakcyjne</div>
+                <div class="meth-note">ROI mierzy efektywność zainwestowanego kapitału własnego — nie całej ceny nieruchomości. Dźwignia kredytowa zazwyczaj zwiększa ROI w porównaniu do zakupu gotówkowego, o ile nieruchomość generuje dodatni cashflow.</div>
+              </div>
+              <div class="meth-block">
+                <div class="meth-block-title">Okres zwrotu inwestycji</div>
+                <div class="meth-formula">Okres zwrotu = Kapitał własny ÷ Roczny zysk netto</div>
+                <div class="meth-note">Liczba lat potrzebna do odzyskania zainwestowanego kapitału z samych zysków z najmu. Nie uwzględnia wzrostu wartości nieruchomości — to dodatkowy bonus. Dobry wynik: poniżej 15 lat.</div>
+              </div>
+            </div>
+            <div class="meth-sources"><strong>Źródła:</strong> Ustawa o PIT (ryczałt 8,5%/12,5%) · NBP — dane o cenach nieruchomości · GUS — wskaźniki rynku najmu · Dz.U. 2021 poz. 1128</div>
+            <div class="meth-updated">Ostatnia aktualizacja: maj 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-col">
+        <div class="results-card">
+          <div class="results-head">// Wyniki analizy</div>
+          <div class="result-row"><span class="rl">Kapitał własny</span><span class="rv" id="r-kapital">—</span></div>
+          <div class="result-row"><span class="rl">Rata kredytu</span><span class="rv" id="r-rata">—</span></div>
+          <div class="result-row"><span class="rl">Przychód roczny (po pustostanach)</span><span class="rv" id="r-przychod">—</span></div>
+          <div class="result-row"><span class="rl">Podatek ryczałtowy 8.5%</span><span class="rv" id="r-podatek">—</span></div>
+          <div class="result-row"><span class="rl">Koszty operacyjne / rok</span><span class="rv" id="r-koszty">—</span></div>
+          <div class="result-row"><span class="rl">Zysk netto / miesiąc</span><span class="rv big" id="r-zysk-mies">—</span></div>
+          <div class="result-row"><span class="rl">Zysk netto / rok</span><span class="rv" id="r-zysk-rok">—</span></div>
+          <div class="result-row"><span class="rl">ROI (zwrot z kapitału)</span><span class="rv big" id="r-roi">—</span></div>
+          <div class="result-row"><span class="rl">Okres zwrotu inwestycji</span><span class="rv" id="r-zwrot">—</span></div>
+          <div class="verdict-box">
+            <div class="vl">// Ocena inwestycji</div>
+            <div class="vt" id="r-ocena">—</div>
+            <div style="font-size:12px;color:var(--muted);margin-top:5px;" id="r-ocena-sub"></div>
+          </div>
+        </div>
+
+        <div class="table-label">// 3 scenariusze czynszu</div>
+        <div class="scenarios">
+          <div class="scenario-card">
+            <div class="sc-label">Optymistyczny</div>
+            <div class="sc-czynsz" id="sc-opt-czynsz">—</div>
+            <div class="sc-roi" id="sc-opt-roi">—</div>
+            <div class="sc-ocena" id="sc-opt-ocena">—</div>
+          </div>
+          <div class="scenario-card">
+            <div class="sc-label">Realistyczny</div>
+            <div class="sc-czynsz" id="sc-real-czynsz">—</div>
+            <div class="sc-roi" id="sc-real-roi">—</div>
+            <div class="sc-ocena" id="sc-real-ocena">—</div>
+          </div>
+          <div class="scenario-card">
+            <div class="sc-label">Pesymistyczny</div>
+            <div class="sc-czynsz" id="sc-pes-czynsz">—</div>
+            <div class="sc-roi" id="sc-pes-roi">—</div>
+            <div class="sc-ocena" id="sc-pes-ocena">—</div>
+          </div>
+        </div>
+
+        <div class="table-label">// Projekcja 5-letnia</div>
+        <div class="results-card">
+          <div style="overflow-x:auto;padding:4px 0;">
+            <table class="data-table">
+              <thead><tr><th>Rok</th><th>Cash flow</th><th>Spł. kapitał</th><th>Wzrost wart.</th></tr></thead>
+              <tbody id="proj-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="calc-cta">
+          <div class="cta-text">
+            <strong>Pobierz Excel — pełna analiza</strong>
+            Bilans miesięczny, struktura inwestycji, całkowity ROI po 5 latach
+          </div>
+          <a class="btn-excel" href="https://imemyselfai.gumroad.com/l/rentownoscinajmu" data-track="cta_click" data-location="calc" data-product="rentownosc_najmu">Kup za 39 PLN →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="explainer" id="jak-to-dziala">
+  <div class="section-tag">// Jak to działa</div>
+  <h2>Co kalkulator <em>bierze pod uwagę</em></h2>
+  <div class="exp-grid">
+    <div class="exp-item">
+      <div class="exp-num">01 — ROI NETTO</div>
+      <h4>Realny zwrot z kapitału</h4>
+      <p>Zysk po odjęciu raty kredytu, podatku ryczałtowego 8.5%, wszystkich kosztów miesięcznych i pustostanów. Nie ROI brutto z ogłoszeń — tylko to co realnie zostaje w kieszeni.</p>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">02 — PODATEK 8.5%</div>
+      <h4>Ryczałt od najmu prywatnego</h4>
+      <p>Standardowa stawka dla najmu prywatnego w Polsce do 100 000 PLN przychodu rocznie. Kalkulator odejmuje go automatycznie od przychodu z najmu przed wyliczeniem zysku.</p>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">03 — PUSTOSTANY</div>
+      <h4>Realistyczny przychód</h4>
+      <p>Każde mieszkanie stoi puste przez pewien czas — zmiana najemcy, remonty, urlopy. Domyślnie 0.5 miesiąca/rok. Zmień na swój scenariusz i zobacz jak wpływa na ROI.</p>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">04 — PROJEKCJA 5-LETNIA</div>
+      <h4>Trzy źródła zysku</h4>
+      <p>Cash flow z najmu to tylko część obrazu. Kalkulator pokazuje też spłacony kapitał kredytu i wzrost wartości nieruchomości — trzy strumienie zysku rok po roku.</p>
+    </div>
+  </div>
+</section>
+
+<section class="upsell">
+  <div class="upsell-card">
+    <div style="text-align:center;">
+      <div class="upsell-tag">✦ Pakiet Excel — 5 Kalkulatorów</div>
+      <h3>Pełna analiza <em>inwestycji w nieruchomości</em></h3>
+      <p>Kompletny zestaw narzędzi dla inwestora — od decyzji o zakupie po wyliczenie zysku z flipu i remontu.</p>
+      <ul class="upsell-list">
+        <li>Kredyt vs Wynajem — kupować czy wynajmować <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem/" class="list-link" data-track="cta_click" data-location="upsell_list" data-product="kredyt_vs_wynajem"><span class="list-price">39 PLN</span> →</a></li>
+        <li>Porównywarka — 4 nieruchomości, pełny ranking <a href="https://imemyselfai.gumroad.com/l/porownywarka" class="list-link" data-track="cta_click" data-location="upsell_list" data-product="porownywarka"><span class="list-price">39 PLN</span> →</a></li>
+        <li>Zysk z Flipu — z podatkiem 19% i kredytem pomostowym <a href="https://imemyselfai.gumroad.com/l/zyskzflipu" class="list-link" data-track="cta_click" data-location="upsell_list" data-product="zysk_z_flipu"><span class="list-price">39 PLN</span> →</a></li>
+        <li>Estymator Remontu — 10 kategorii, ceny 2026 <a href="https://imemyselfai.gumroad.com/l/estymatorremontu" class="list-link" data-track="cta_click" data-location="upsell_list" data-product="estymator_remontu"><span class="list-price">39 PLN</span> →</a></li>
+        <li>Rentowność Najmu — projekcja 5-letnia, 3 scenariusze <span style="color:var(--muted);font-size:13px;">(ten kalkulator)</span> <a href="https://imemyselfai.gumroad.com/l/rentownoscinajmu" class="list-link" data-track="cta_click" data-location="upsell_list" data-product="rentownosc_najmu"><span class="list-price">39 PLN</span> →</a></li>
+      </ul>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+        <a class="btn-outline" href="https://mmandai.github.io/pakiet-inwestora/" data-track="cta_click" data-location="upsell" data-product="pakiet_landing">Zobacz sklep</a>
+      </div>
+    </div>
+    <div class="price-box">
+      <div class="price-old">195 PLN</div>
+      <div class="price-big">149<span> PLN</span></div>
+      <div class="price-save">↓ Oszczędzasz 46 PLN</div>
+      <a class="btn-primary" style="width:100%;justify-content:center;" href="https://imemyselfai.gumroad.com/l/pin" data-track="cta_click" data-location="upsell_price" data-product="bundle">Kup pakiet →</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="section-tag" style="margin-bottom:32px;">// FAQ</div>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>Czym różni się ROI brutto od ROI netto?</summary>
+      <div class="faq-body">ROI brutto to czynsz roczny podzielony przez cenę zakupu — tak liczone są oferty w ogłoszeniach. ROI netto uwzględnia wszystkie koszty: ratę kredytu, podatek 8.5%, opłaty wspólnoty, ubezpieczenie, fundusz remontowy i pustostany. Różnica bywa 3–4 punkty procentowe. Ten kalkulator liczy ROI netto.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Dlaczego kalkulator używa stawki 8.5%?</summary>
+      <div class="faq-body">8.5% to stawka ryczałtu od najmu prywatnego w Polsce do progu 100 000 PLN przychodu rocznie (powyżej 12.5%). Ryczałt płaci się od przychodu, nie od dochodu — bez odliczania kosztów. To najprostsza i najczęściej stosowana forma opodatkowania najmu prywatnego. Jeśli Twoja sytuacja jest inna, uwzględnij to w interpretacji wyników.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Jaki ROI jest dobry dla polskiego rynku w 2026?</summary>
+      <div class="faq-body">Według analiz rynku, rentowność netto najmu w Polsce wynosi aktualnie 4–6% rocznie przy zakupie gotówkowym. ROI powyżej 7–8% to wynik bardzo dobry, często wymaga zakupu w mniejszym mieście lub podziału na pokoje. ROI poniżej 3–4% przy kredycie może oznaczać ujemny cash flow — mieszkanie kosztuje więcej niż zarabia.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Co jeśli kupuję za gotówkę, bez kredytu?</summary>
+      <div class="faq-body">Ustaw wkład własny na 100% i oprocentowanie na 0. Kalkulator automatycznie wyliczy ROI bez raty kredytowej — co zwykle daje znacznie lepszy wynik niż przy finansowaniu.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Czy darmowy kalkulator różni się od wersji Excel?</summary>
+      <div class="faq-body">Wersja web daje podstawową analizę: ROI, zysk miesięczny, 3 scenariusze i projekcję 5-letnią. Excel zawiera dodatkowo pełny bilans miesięczny ze strukturą kosztów, udział procentowy każdego elementu inwestycji oraz dokładne wyliczenie całkowitego zwrotu po 5 latach łącznie z wzrostem wartości nieruchomości.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Mam pytanie o konkretne wyliczenie</summary>
+      <div class="faq-body">Skontaktuj się: <a href="mailto:imemyselfandai@gmail.com">imemyselfandai@gmail.com</a>. Odpowiadam w 24h.</div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://mmandai.github.io">MMDAI — Wszystkie kalkulatory</a>
+      <a href="https://mmandai.github.io/pakiet-inwestora/">Pakiet Inwestora</a>
+      <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem/">Kredyt vs Wynajem</a>
+      <a href="https://imemyselfai.gumroad.com/l/rentownoscinajmu">Pobierz Excel — 39 PLN</a>
+      <a href="https://mmandai.github.io/pl-slownik/">Słownik PL</a>
+      <a href="https://mmandai.github.io/about/">About MMDAI</a>
+    </div>
+    <p class="disclaimer">Kalkulator ma charakter informacyjny i edukacyjny. Nie stanowi porady finansowej, inwestycyjnej ani prawnej. Wyniki są szacunkowe — rzeczywiste koszty, ceny i zwroty mogą się różnić. Zawsze skonsultuj się z doradcą przed podjęciem decyzji inwestycyjnej. MMDAI nie ponosi odpowiedzialności za decyzje podjęte na podstawie wyników kalkulatora. Informacje aktualne na dzień maj 2026.</p>
+  </div>
+</footer>
+
+<script>
+const G = id => parseFloat(document.getElementById(id)?.value) || 0;
+const PLN = n => isNaN(n)||!isFinite(n) ? '—' : Math.round(n).toLocaleString('pl-PL') + ' zł';
+const PCT = n => isNaN(n)||!isFinite(n) ? '—' : n.toFixed(1) + '%';
+
+function pmt(rate, nper, pv) {
+  if (rate === 0 || nper === 0) return 0;
+  return (pv * rate * Math.pow(1+rate,nper)) / (Math.pow(1+rate,nper) - 1);
+}
+
+function calcROI(czynsz, kapital, rata, kosztMies, pustostany) {
+  const efMies    = 12 - pustostany;
+  const przychod  = czynsz * efMies;
+  const podatekRycz = przychod * 0.085;
+  const kosztRok  = kosztMies * 12 + rata * 12;
+  const zyskRok   = przychod - podatekRycz - kosztRok;
+  const roi       = kapital > 0 ? (zyskRok / kapital) * 100 : 0;
+  return { przychod, podatekRycz, kosztRok, zyskRok, roi };
+}
+
+function ocenaROI(roi) {
+  if (roi > 8)  return { text: 'Dobra okazja', cls: 'dobra',    sub: 'ROI > 8% — atrakcyjna rentowność' };
+  if (roi > 5)  return { text: 'Średnia',       cls: 'srednia',  sub: 'ROI 5–8% — wymaga głębszej analizy' };
+  if (roi > 0)  return { text: 'Ryzykowna',     cls: 'ryzykowna',sub: 'ROI < 5% — niska rentowność' };
+  return        { text: 'Ujemny cash flow', cls: 'ryzykowna', sub: 'Koszty przewyższają przychody' };
+}
+
+function calc() {
+  const zakup      = G('zakup');
+  const remont     = G('remont');
+  const trans      = G('trans');
+  const wklad      = G('wklad');
+  const oprocent   = G('oprocent');
+  const okres      = G('okres');
+  const czynsz     = G('czynsz');
+  const pustostany = G('pustostany');
+  const wzrost     = G('wzrost');
+  const wspolnota  = G('wspolnota');
+  const fundusz    = G('fundusz');
+  const ubezp      = G('ubezp');
+  const podatek    = G('podatek');
+  const zarzadz    = G('zarzadz');
+  const naprawy    = G('naprawy');
+
+  const kwotaKredytu = zakup * (1 - wklad / 100);
+  const rata         = pmt(oprocent / 100 / 12, okres * 12, kwotaKredytu);
+  const kapital      = zakup * (wklad / 100) + trans + remont;
+  const kosztMies    = wspolnota + fundusz + ubezp + podatek + zarzadz + naprawy;
+  const wartoscNier  = zakup + remont;
+
+  const { przychod, podatekRycz, kosztRok, zyskRok, roi } = calcROI(czynsz, kapital, rata, kosztMies, pustostany);
+  const zyskMies  = zyskRok / 12;
+  const zwrot     = zyskRok > 0 ? kapital / zyskRok : 0;
+  const ocena     = ocenaROI(roi);
+
+  document.getElementById('r-kapital').textContent    = PLN(kapital);
+  document.getElementById('r-rata').textContent       = rata > 0 ? PLN(rata) : '— (brak kredytu)';
+  document.getElementById('r-przychod').textContent   = PLN(przychod);
+  document.getElementById('r-podatek').textContent    = PLN(podatekRycz);
+  document.getElementById('r-koszty').textContent     = PLN(kosztRok);
+  const zmEl = document.getElementById('r-zysk-mies');
+  zmEl.textContent = PLN(zyskMies);
+  zmEl.className = 'rv big ' + (zyskMies >= 0 ? 'g' : 'r');
+  document.getElementById('r-zysk-rok').textContent   = PLN(zyskRok);
+  const roiEl = document.getElementById('r-roi');
+  roiEl.textContent = PCT(roi);
+  roiEl.className = 'rv big ' + (roi >= 5 ? 'g' : roi >= 0 ? 'srednia-color' : 'r');
+  document.getElementById('r-zwrot').textContent      = zwrot > 0 ? zwrot.toFixed(1) + ' lat' : '—';
+  const ocEl = document.getElementById('r-ocena');
+  ocEl.textContent = ocena.text;
+  ocEl.className = 'vt ' + ocena.cls;
+  document.getElementById('r-ocena-sub').textContent = ocena.sub;
+
+  // 3 scenarios (+10%, base, -10%)
+  [['opt',1.1],['real',1.0],['pes',0.9]].forEach(([id,mult]) => {
+    const czSc = czynsz * mult;
+    const sc = calcROI(czSc, kapital, rata, kosztMies, pustostany);
+    const oc = ocenaROI(sc.roi);
+    document.getElementById(`sc-${id}-czynsz`).textContent = PLN(czSc) + '/mies.';
+    const rEl = document.getElementById(`sc-${id}-roi`);
+    rEl.textContent = PCT(sc.roi);
+    rEl.style.color = sc.roi >= 5 ? 'var(--green)' : sc.roi >= 0 ? 'var(--gold)' : 'var(--red)';
+    document.getElementById(`sc-${id}-ocena`).textContent = oc.text;
+  });
+
+  // 5-year projection
+  const tbody = document.getElementById('proj-tbody');
+  tbody.innerHTML = '';
+  let remKredyt = kwotaKredytu;
+  const rMies = oprocent / 100 / 12;
+  for (let yr = 1; yr <= 5; yr++) {
+    let splKapital = 0;
+    for (let m = 0; m < 12; m++) {
+      const int = remKredyt * rMies;
+      const prin = Math.max(0, rata - int);
+      splKapital += prin;
+      remKredyt = Math.max(0, remKredyt - prin);
+    }
+    const wzrostWart = wartoscNier * Math.pow(1 + wzrost / 100, yr) - wartoscNier * Math.pow(1 + wzrost / 100, yr - 1);
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>Rok ${yr}</td><td class="${zyskRok>=0?'g':'r'}">${PLN(zyskRok)}</td><td class="g">${PLN(splKapital)}</td><td class="g">${PLN(wzrostWart)}</td>`;
+    tbody.appendChild(tr);
+  }
+}
+
+(function(){
+  function tr(n,p){if(typeof gtag==='function')gtag('event',n,Object.assign({transport_type:'beacon'},p));}
+  document.querySelectorAll('[data-track]').forEach(el=>el.addEventListener('click',()=>tr('cta_click',{location:el.dataset.location,product:el.dataset.product,link_url:el.href,link_text:el.textContent.trim().substring(0,100)})));
+  const d={};
+  window.addEventListener('scroll',()=>{
+    const pct=Math.round((window.scrollY+window.innerHeight)/document.body.scrollHeight*100);
+    [25,50,75,100].forEach(x=>{if(pct>=x&&!d[x]){d[x]=true;tr('scroll_depth',{depth:x});}});
+  });
+})();
+
+calc();
+
+function toggleMeth() {
+  const trigger = document.getElementById('methTrigger');
+  const box = document.getElementById('methBox');
+  const isOpen = trigger.classList.contains('open');
+  trigger.classList.toggle('open', !isOpen);
+  box.classList.toggle('open', !isOpen);
+  if (!isOpen) setTimeout(() => box.scrollIntoView({behavior:'smooth',block:'nearest'}), 50);
+}
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('toggle', () => {
+    if (item.open) {
+      document.querySelectorAll('.faq-item').forEach(other => {
+        if (other !== item && other.open) other.removeAttribute('open');
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
